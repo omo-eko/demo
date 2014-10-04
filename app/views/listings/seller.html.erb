@@ -9,7 +9,6 @@
     <th class="center">Description</th>
     <th class="center">Duration</th>
     <th class="center">Location</th>
-    <th class="center">Price</th>
     <th class="center">Action</th>
   </tr>
   <% @listings.each do |listing| %>
@@ -19,7 +18,6 @@
     <td><%= listing.description %></td>
     <td><%= listing.duration %></td>
     <td><%= listing.location %></td>
-    <td><%= number_to_currency(listing.price) %></td>
     <td>
       <!-- Single button -->
       <div class="btn-group">

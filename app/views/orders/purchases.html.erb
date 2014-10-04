@@ -5,16 +5,14 @@
 <table class="table table-striped table-bordered">
   <tr>
     <th class="center">Image</th>
-    <th class="center">Item</th>
-    <th class="center">Price</th>
-    <th class="center">Seller</th>
-    <th class="center">Date Purchased</th>
+    <th class="center">Position</th>
+    <th class="center">Employer</th>
+    <th class="center">Date Applied</th>
   </tr>
   <% @orders.each do |order| %>
   <tr>
     <td class="center"><%= image_tag order.listing.image.url(:thumb)%></td>
     <td class="center"><%= order.listing.name %></td>
-    <td class="center"><%= number_to_currency(order.listing.name) %></td>
     <td class="center"><%= order.seller.name %></td>
     <td class="center"><% order.created_at.strftime("%B %-d, %Y")%></td>
   </tr>
@@ -22,6 +20,3 @@
 </table>
 
 <br>
-<% if (user_signed_in?) %>
-<%= link_to 'New Posting', new_listing_path, class: "btn btn-link" %>
-<% end %>
