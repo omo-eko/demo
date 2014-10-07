@@ -2,13 +2,17 @@
   
   <div class="innerwrapper">
     <% @listings.each do |listing| %>
-      <div class="col-md-3">
+      <div class="innerwrapperone">
         <div class="thumbnail">
-          <div class="caption">
+          <div class="description">
             <h3><%= listing.description%></h3>
           </div>
-          <%= link_to image_tag(listing.image.url), listing%>
-          <div class="caption">
+          <div class="attachedpicture">
+          <div id="companyimage"><a href="/"></a></div>
+          <!-- <div class="hide"><%= link_to image_tag(listing.image.url), listing%>
+          </div> -->
+          </div>
+          <div class="details">
             <h3><%= listing.name %></h3>
             <p><%= listing.duration%><br><%= listing.location%></p>
             <% if (user_signed_in?) && (current_user == listing.user) %>
@@ -21,4 +25,3 @@
 </div>
 
 <br>
-
