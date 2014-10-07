@@ -1,3 +1,5 @@
+*{ box-sizing: border-box;}
+
 @import 'header';
 @import 'container';
 @import 'footer';
@@ -8,7 +10,7 @@ $colorgrey: #eeeeee;
 $colorgreyer: #dddddd;
 $colorwhite: #ffffff;
 
-*{ box-sizing: border-box;}
+
 
 body {
 	margin: 0%;

@@ -8,11 +8,13 @@ $colorwhite: #ffffff;
 
 
 .outterwrapper{
-
+margin: 0%;
 }
 .innerwrapper{
-background-color: #666666;
-margin: 0% 2%;
+	background-color: #666666;
+	min-width: 100%;
+	height: 40em;
+	margin: 0% 0%;
 }
 .innerwrapperone{
 
@@ -27,7 +29,15 @@ margin: 0% 2%;
 	display: inline-block;
 	max-width: 5%;
 }
-#companyimage
+#wrapcompanyimage{
+}
+#companyimage{
+	background-image: url("http://i.imgur.com/19AOg88.jpg");
+
+}
 .details{
 
+}
+h3{
+	margin:0;
 }
