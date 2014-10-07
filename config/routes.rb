@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  devise_for :student_users
+  devise_for :employer_users
+  devise_for :admins
   devise_for :users
   root'listings#index'
   resources :listings do
