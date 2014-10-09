@@ -1,0 +1,16 @@
+body {
+	font: 100% $fontone;
+	background-color: $colorgrey;
+}
+
+#container{
+	padding: 0em 2em;
+}
+.site-content, .site-wrapper {
+	margin-top: 5%;
+}
+.site-content {
+	.row {
+		margin-bottom: rem-calc(30px);
+	}
+}
