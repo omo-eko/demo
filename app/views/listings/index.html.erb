@@ -1,34 +1,32 @@
-<div class="outterwrapper">
+<div class="row">
 
-  <div class="innerwrapper">
+  <div class="column">
     <% @listings.each do |listing| %>
-    <div class="innerwrapperone">
-      <div class="thumbnail">
-        <div class="description">
-          <h3><%= listing.description%></h3>
-        </div>
-        <div class="attachedpicture">
+    <!--.thumbnail houses .description(inherit), .attachedpicture(image)-->
+    <div class="thumbnail">
+      <div class="description">
+        <h3><%= listing.description%></h3>
+      </div>
 
-          <div id="wrapcompanyimage">
-            <a href="/">
-            <img alt="" src="#companyimage">
-            </a>
-          </div>
+      <div class="attachedpicture">
+        <a href="#"><div id ="companyimage"></div></a>
+      </div>
 
           <!-- <div class="hide"><%= link_to image_tag(listing.image.url), listing%>
         </div> -->
 
+        <div class="details">
+          <h3><%= listing.name %></h3>
+          <p><%= listing.duration%><br><%= listing.location%></p>
+          <% if (user_signed_in?) && (current_user == listing.user) %>
+          <% end %>
+        </div>
       </div>
-      <div class="details">
-        <h3><%= listing.name %></h3>
-        <p><%= listing.duration%><br><%= listing.location%></p>
-        <% if (user_signed_in?) && (current_user == listing.user) %>
-        <% end %>
-      </div>
+      <% end %>
     </div>
   </div>
-  <% end %>
-</div>
-</div>
 
-<br>
+  <br>
+
+
+<!-- ("http://i.imgur.com/19AOg88.jpg"); -->

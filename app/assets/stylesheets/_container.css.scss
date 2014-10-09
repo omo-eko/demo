@@ -7,33 +7,41 @@ $colorgreyer: #dddddd;
 $colorwhite: #ffffff;
 
 
-.outterwrapper{
+.row{
 margin: 0%;
+padding: 0%;
 }
-.innerwrapper{
+.column{
 	background-color: #666666;
 	min-width: 100%;
 	height: 40em;
 	margin: 0% 0%;
 }
-.innerwrapperone{
 
-}
 .thumbnail{
+display: inline-block;
+float: left;
+margin: 0% 0.4%;
+max-width: 25%;
 
 }
+
 .description{
 
 }
+
 .attachedpicture {
 	display: inline-block;
-	max-width: 5%;
+	background-position: center;
+	margin: 0%;
+	padding: 0%;
 }
-#wrapcompanyimage{
-}
-#companyimage{
-	background-image: url("http://i.imgur.com/19AOg88.jpg");
 
+#companyimage{
+	background-image: url("app/assets/images/London_5.jpg");
+	background-size: cover;
+	width: 25%;
+	height: 200px;
 }
 .details{
 
