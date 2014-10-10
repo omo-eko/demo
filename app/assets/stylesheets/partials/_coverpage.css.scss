@@ -1,9 +1,12 @@
-body{
+.coverpageimage{
 	background-image: url("http://i.imgur.com/onVcJUM.jpg");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 	display: inline-block;
+	background-color: black;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 	margin: 0%;
-	float: left;
+	padding: 0px;
+	min-width: 100%;
+	min-height: 30rem;
 }

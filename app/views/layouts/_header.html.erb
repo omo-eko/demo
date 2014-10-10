@@ -1,33 +1,32 @@
 <div class="contain-to-grid">
-<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a class="brand-logo" href="/">Stutern</a></h1>
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
 
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-
-      <li class="active"><%= link_to 'Sign In', new_user_session_path  %></li>
-      <li class="has-dropdown">
-        <a href="#">Sign Up</a>
-        <ul class="dropdown">
-          <li ><%= link_to 'Sign Up as Employer', new_user_registration_path %></li>
-          <li ><%= link_to 'Sign Up as Student', new_user_registration_path %></li>
+      <!-- Left Nav Section -->
+      <!-- Toggle Menu -->
+      <div class="name" >
+        <ul class="left">
+        <li><%= link_to "What's Stutern", pages_about_path %></li>
         </ul>
-      </li>
+      </div>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
 
-  </ul>
-    <!-- Left Nav Section -->
-    <ul class="left">
-     <li class="navbar-brand"><a class="brand-logo" href="/"></a></li>
-     <li id="delete"><%= link_to "About", pages_about_path %></li>
-     <li><%= link_to "Contact", pages_contact_path %></li>
-   </ul>
- </section>
-</nav>
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+
+        <li class="active"><%= link_to 'Sign In', new_user_session_path  %></li>
+        <li class="has-dropdown">
+          <a href="#">Sign Up</a>
+          <ul class="dropdown">
+            <li ><%= link_to 'Sign Up as Employer', new_user_registration_path %></li>
+            <li ><%= link_to 'Sign Up as Student', new_user_registration_path %></li>
+          </ul>
+        </li>
+
+      </ul>
+    </section>
+  </nav>
 </div>

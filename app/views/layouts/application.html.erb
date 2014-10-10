@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><%= content_for?(:title) ? yield(:title) : "Stutern" %></title>
+
   <%= stylesheet_link_tag'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag "vendor/modernizr" %>
 
@@ -16,27 +17,13 @@
     <%= render 'layouts/header' %>
   </div>
 
-  <!-- container's 'yield' is parented to ../listings/index.html.erb -->
   <div id="container">
-    <% flash.each do |name, msg| %>
-    <% if msg.is_a?(String) %>
-    <div class="alert alert-<%= name==:notice ? 'success' : 'danger' %> alert-dismissable">
-      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
-        &times;
-      </button>
-      <%= content_tag :div, msg,:id=>"flash_#{name}" %>
-    </div>
-    <% end %>
-    <% end %>
-    <%= render 'layouts/coverpage' %>
-    <%= yield %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= render 'layouts/container' %>
   </div>
 
   <div id="footer">
     <%= render 'layouts/footer' %>
   </div>
-
 
 </body>
 </html>
