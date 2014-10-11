@@ -1,4 +1,8 @@
+h1{
+	text-align: center;
+}
 p{
+	@extend h1;
 	color: red;
-	background-color: none;
+
 }
