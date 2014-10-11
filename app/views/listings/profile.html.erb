@@ -1,0 +1,73 @@
+<div class="site-wrapper">
+  <div class="listing-container">
+    <div class="row">
+      <div class="listings">
+
+        <% @listings.each do |listing| %>
+
+        <div class="large-4 small-12 medium-6 columns listing">
+          <div class="panel">
+
+<!-- companyname holds description -->
+            
+            <div class="companyname">
+              <div class="row">
+                <div class="description">
+                  <h4><%= listing.description%></h4>
+                </div>
+              </div>
+            </div>
+<!-- . -->
+
+<!-- postsimage holds image -->
+            <div class="postsimage">
+
+              <div class="row">
+                <div class="attachedpicture">
+                  <a href="#">
+                    <%= image_tag listing.image.url(:medium), class:"companyimage" %>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+<!-- . -->
+
+<!-- details holds rows of no. 3(name) 4(duarion location)  -->
+            <div class="details">
+
+                <div class="row">
+                  <div class="large-16 small-16 columns">
+                    <div class="left">
+                      <h5>
+                        <%= truncate listing.name, length: 60  %>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="large-6 small-6 columns">
+                    <div class="left">
+                      <%= listing.duration%> 
+                    </div>
+                  </div>
+
+                  <div class="large-6 small-6 columns">
+                    <div class="right">
+                      <%= listing.location%>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+<!-- . -->            
+          </div>
+        </div>
+        <% end %>
+
+        </div>
+      </div>
+    </div>
+  </div>
