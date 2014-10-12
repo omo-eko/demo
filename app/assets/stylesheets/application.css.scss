@@ -10,9 +10,7 @@
 @import "vendor/base";
 
 // customized stylsheet 
+
 body{
-background-color: $white;
-p{
-	 @extend body;
-}
+background-color: $smoke;
 }

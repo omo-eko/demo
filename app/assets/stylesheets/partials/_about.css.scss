@@ -1,8 +1,33 @@
-h1{
-	text-align: center;
-}
-p{
-	@extend h1;
-	color: red;
+.aboutpageclass{
+	margin: 0% 10% 0% 10%;
+	padding: 4% 0%;
 
+		.panel{
+			margin: 0%;
+			padding: 2%;
+			border-radius: 4px;
+	}
 }
+
+.about{
+		margin-bottom: 10px;
+		}
+
+h1{
+	text-align: left;
+	color: $iron;
+	padding: 0px 100px;
+	color: $black;
+
+	@media #{$small-only}{
+		padding: 0px 20px;}
+	}
+
+	p{
+		@extend h1;
+		font: {
+			size: $paragraph-font-size;
+			weight: $paragraph-font-weight;
+		}
+
+	}
