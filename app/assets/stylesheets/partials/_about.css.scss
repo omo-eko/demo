@@ -17,7 +17,7 @@ h1{
 	text-align: left;
 	color: $iron;
 	padding: 0px 100px;
-	color: $black;
+	color: $black !important;
 
 	@media #{$small-only}{
 		padding: 0px 20px;}
