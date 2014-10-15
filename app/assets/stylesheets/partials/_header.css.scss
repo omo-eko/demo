@@ -3,6 +3,7 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
+	//border-bottom: 1px solid $jet !important; 
 	/*.brand{
 		float:left;
 		background-position: center;
@@ -20,12 +21,21 @@
 		.name{
 			margin: 0%;
 			padding: 0%;
+		.left{
+			padding: 0 16.6666666667px;
+			line-height: 50px;
+			
 			ul{
 				margin-top: 1em;
 				li{
 					a{
-						color:$white;
-						font-family: $font-family-sans-serif;
+						color: #FFFFFF;
+  						text-decoration: none;
+  						line-height: inherit;
+  						font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+						font-size: 0.8125rem;
+						font-weight: normal;
+						text-transform: none;
 					}
 				}
 			}
@@ -33,5 +43,44 @@
 				margin: 0%;
 			}
 		}
+		}
 	}
+		
+	.top-bar-section {
+		li.active:not(.has-form) a:not(.button){background:$oil;}
+	}
+		//a{
+		//color: $jet !important;
+		//} 
 }
+
+
+//just an isolated stylyig "what's stutern's" a tag
+ .title-area{
+		
+		
+		.name{
+			
+		
+			
+			ul{
+				
+				li{
+					a{
+						color: #FFFFFF;
+  						text-decoration: none;
+  						line-height: inherit;
+  						font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+						font-size: 0.8125rem;
+						font-weight: normal;
+						text-transform: none;
+					}
+				}
+			}
+			.toggle-topbar{
+				
+			}
+	
+		}
+	}
+
