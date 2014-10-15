@@ -3,7 +3,7 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	//border-bottom: 1px solid $jet !important; 
+	//border-top: 1px solid $jet; 
 	/*.brand{
 		float:left;
 		background-position: center;
@@ -45,9 +45,14 @@
 		}
 		}
 	}
-		
+	
+	//isolated styling of toggle's tag backround color
 	.top-bar-section {
 		li.active:not(.has-form) a:not(.button){background:$oil;}
+	}
+	//isolated styling of toggle's tag backround icon color and appperance
+	.top-bar-section .has-dropdown > a:after{
+		border-color: rgba(255, 255, 255, 1) transparent transparent;
 	}
 		//a{
 		//color: $jet !important;
@@ -55,7 +60,7 @@
 }
 
 
-//just an isolated stylyig "what's stutern's" a tag
+//isolated styling of "what's stutern" <a> tag
  .title-area{
 		
 		
