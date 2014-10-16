@@ -1,11 +1,12 @@
 <div class="contain-to-grid">
+
   <nav class="top-bar" data-topbar role="navigation">
+    
     <ul class="title-area">
       <!-- Left Nav Section -->
       <!-- Toggle Menu -->
       <div class="name" >
         <ul class="left">
-        <li><%= link_to "Welcome to Stutern ?", pages_about_path %></li>
         </ul>
       </div>
       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
@@ -18,20 +19,20 @@
       <div class = "brand-logo"><%= image_tag 'stutern_logo.png' %></div>
     </a>
     -->
-
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
 
-        <li class="active"><%= link_to 'Sign In', new_user_session_path  %></li>
+        <li><%= link_to 'Sign In', new_user_session_path  %></li>
         <li class="has-dropdown">
         
           <a href="#">Sign Up</a>
-          <ul class="dropdown">
+          <ul class="dropdown ">
             <li ><%= link_to 'Sign Up as Employer', new_user_registration_path %></li>
             <li ><%= link_to 'Sign Up as Student', new_user_registration_path %></li>
           </ul>
         </li>
+        <li><%= link_to "About Stutern", pages_about_path %></li>
 
       </ul>
     </section>

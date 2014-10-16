@@ -1,7 +1,23 @@
-/*.fields{
-	max-width: 50% !important;
-	display: inline-block;
-    float: left;
-    clear: left;
-    width: 250px;
-}*/
+.all{
+
+	@media #{$medium-only}{
+		margin: 0px 8%;}
+
+	@media #{$small-only}{
+		margin: 0px 8%;}
+		
+	}
+
+.welcome{
+	margin-top: 5%;
+	text-align: center;
+}
+
+hr{
+	margin: 5px 0px;
+}
+
+h2{
+	color: $charcoal;
+	font-size: 25px;
+}

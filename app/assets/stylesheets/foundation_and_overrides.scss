@@ -118,7 +118,7 @@ $jumbo       : #888888;
 $monsoon     : #777777;
 $steel       : #666666;
 $charcoal    : #555555;
-$tuatara     : #444444;
+$bck     	 : #eeefed;
 $oil         : #0ee6de;
 $jet         : #222222;
 $black       : #000000;
@@ -131,7 +131,7 @@ $black       : #000000;
 // $body-font-style: normal;
 
 // We use this to control font-smoothing
-// $font-smoothing: antialiased;
+$font-smoothing: antialiased;
 
 // We use these to control text direction settings
 // $text-direction: ltr;
@@ -140,8 +140,8 @@ $black       : #000000;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
-// $global-rounded: 1000px;
+ $global-radius: 3px;
+ $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
 // $shiny-edge-size: 0 1px 0;
@@ -447,7 +447,7 @@ $paragraph-font-size: 1rem;
 // We use these to control button border and hover styles.
 // $button-border-width: 0px;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
+$button-bg-color: $oil;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
@@ -531,11 +531,11 @@ $paragraph-font-size: 1rem;
 
 // We use this to set the border styles for dropdowns.
 // $f-dropdown-border-style: solid;
-// $f-dropdown-border-width: 1px;
+// $f-dropdown-border-width: 10px;
 // $f-dropdown-border-color: scale-color($white, $lightness: -20%);
 
 // We use these to style the triangle pip.
-// $f-dropdown-triangle-size: 6px;
+// $f-dropdown-triangle-size: 10px;
 // $f-dropdown-triangle-color: $white;
 // $f-dropdown-triangle-side-offset: 10px;
 
@@ -552,7 +552,7 @@ $paragraph-font-size: 1rem;
 // $f-dropdown-content-padding: rem-calc(20);
 
 // Default radius for dropdown.
-// $f-dropdown-radius: $global-radius;
+$f-dropdown-radius: $global-radius;
 
 
 // 09. Dropdown Buttons
