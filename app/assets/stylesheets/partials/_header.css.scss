@@ -1,8 +1,4 @@
 .top-bar{
-		background-image: url("http://i.imgur.com/uY6BcmX.gif");
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center;
 	//border-top: 1px solid $jet; 
 	/*.brand{
 		float:left;
@@ -24,9 +20,11 @@
 			margin: 0%;
 			padding: 0%;
 		.left{
-			padding: 0 16.6666666667px;
+			padding: 0px 0px 0em 1em;
 			line-height: 50px;
+			margin: 0px;
 			
+
 			ul{
 				margin-top: 1em;
 				li{
@@ -89,5 +87,11 @@
 			}
 	
 		}
+	}
+	.logo{
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: 20%;
 	}
 
